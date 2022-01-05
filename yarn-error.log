@@ -1,8 +1,8 @@
 Arguments: 
-  /home/anna/.nvm/versions/node/v12.22.8/bin/node /usr/share/yarn/bin/yarn.js add react-native-animated-spinkit
+  /home/anna/.nvm/versions/node/v12.22.8/bin/node /usr/share/yarn/bin/yarn.js add react-native-gradient-card
 
 PATH: 
-  /home/anna/.nvm/versions/node/v12.22.8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/anna/Android/Sdk/emulator:/home/anna/Android/Sdk/tools:/home/anna/Android/Sdk/tools/bin:/home/anna/Android/Sdk/platform-tools
+  /home/anna/.nvm/versions/node/v12.22.8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/anna/Android/Sdk/emulator:/home/anna/Android/Sdk/tools:/home/anna/Android/Sdk/tools/bin:/home/anna/Android/Sdk/platform-tools:/home/anna/Android/Sdk/emulator:/home/anna/Android/Sdk/tools:/home/anna/Android/Sdk/tools/bin:/home/anna/Android/Sdk/platform-tools
 
 Yarn version: 
   1.22.17
@@ -14,14 +14,17 @@ Platform:
   linux x64
 
 Trace: 
-  Invariant Violation: could not find a copy of react-native to link in /home/anna/Documents/projects/mobile/reactNatIntro/node_modules/react-native-gradient-card-view/node_modules
-      at invariant (/usr/share/yarn/lib/cli.js:2314:15)
-      at PackageLinker.<anonymous> (/usr/share/yarn/lib/cli.js:48895:7)
-      at Generator.next (<anonymous>)
-      at step (/usr/share/yarn/lib/cli.js:310:30)
-      at /usr/share/yarn/lib/cli.js:321:13
-      at runMicrotasks (<anonymous>)
-      at processTicksAndRejections (internal/process/task_queues.js:97:5)
+  Error: https://registry.yarnpkg.com/react-native-gradient-card: Not found
+      at Request.params.callback [as _callback] (/usr/share/yarn/lib/cli.js:67029:18)
+      at Request.self.callback (/usr/share/yarn/lib/cli.js:140883:22)
+      at Request.emit (events.js:314:20)
+      at Request.<anonymous> (/usr/share/yarn/lib/cli.js:141855:10)
+      at Request.emit (events.js:314:20)
+      at IncomingMessage.<anonymous> (/usr/share/yarn/lib/cli.js:141777:12)
+      at Object.onceWrapper (events.js:420:28)
+      at IncomingMessage.emit (events.js:326:22)
+      at endReadableNT (_stream_readable.js:1241:12)
+      at processTicksAndRejections (internal/process/task_queues.js:84:21)
 
 npm manifest: 
   {
@@ -40,12 +43,12 @@ npm manifest:
       "@react-navigation/native": "^6.0.6",
       "@react-navigation/stack": "^6.0.11",
       "expo": "~44.0.0",
+      "expo-linear-gradient": "^11.0.0",
       "expo-status-bar": "~1.2.0",
       "react": "17.0.1",
       "react-dom": "17.0.1",
       "react-native": "0.64.3",
-      "react-native-animated-spinkit": "^1.5.2",
-      "react-native-dynamic-search-bar": "github:WrathChaos/react-native-dynamic-search-bar#expo",
+      "react-native-dynamic-search-bar": "^2.0.2",
       "react-native-dynamic-vector-icons": "github:WrathChaos/react-native-dynamic-vector-icons#expo",
       "react-native-gesture-handler": "^2.1.0",
       "react-native-safe-area-context": "^3.3.2",
@@ -2592,6 +2595,11 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/expo-keep-awake/-/expo-keep-awake-10.0.1.tgz#9f1176216c41eee20843c8232acfdca2bc32d334"
     integrity sha512-kcBtoDGkm3RRe6BpKDvR7gof/ErajEia38u92pRvNRctdh+p8AFO7GQuiipyg3iMfhcCFVTCIV7h3tuA0g/yDw==
   
+  expo-linear-gradient@^11.0.0:
+    version "11.0.0"
+    resolved "https://registry.yarnpkg.com/expo-linear-gradient/-/expo-linear-gradient-11.0.0.tgz#88605aad93ee73c32110e83e89ef17bb13c330b5"
+    integrity sha512-OVzmsz5y+NxX4XvtQhKAQCdakVaAwFB0ajYlcT50zl1MKU33LrBa8hxSe3qo8CCGSZSfjdfzGvyZ1cf12BXI9Q==
+  
   expo-modules-autolinking@0.5.1:
     version "0.5.1"
     resolved "https://registry.yarnpkg.com/expo-modules-autolinking/-/expo-modules-autolinking-0.5.1.tgz#44f56288d55f6a71576ddd94c18ec9ec8141207b"
@@ -4536,6 +4544,15 @@ Lockfile:
       flow-parser "^0.121.0"
       jscodeshift "^0.11.0"
       nullthrows "^1.1.1"
+  
+  react-native-dynamic-search-bar@^2.0.2:
+    version "2.0.2"
+    resolved "https://registry.yarnpkg.com/react-native-dynamic-search-bar/-/react-native-dynamic-search-bar-2.0.2.tgz#946326df34c853da1655aec7bdaacaa04b01e39c"
+    integrity sha512-VOJf43hwfA5TRmYPTmPd5+unosruKXxVL41vP/AaofMrYM90hen0LOgGxUkZquqjg/nQidv/PsQhzOx02orE7w==
+  
+  "react-native-dynamic-vector-icons@github:WrathChaos/react-native-dynamic-vector-icons#expo":
+    version "0.1.1"
+    resolved "https://codeload.github.com/WrathChaos/react-native-dynamic-vector-icons/tar.gz/5335e80080125505044e6d60bb7c79cb8afe5971"
   
   react-native-gesture-handler@^2.1.0:
     version "2.1.0"
